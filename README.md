@@ -27,14 +27,14 @@ A new feature, Empty Mass Euro Avg (kg), was created by averaging the minimum an
 
 # Technology Stack
 
-The analysis was conducted in Python using the following tools and libraries:
+The analysis was conducted in Python using the following tools and libraries:  
 
-**Python:** Core language for analysis
-**Pandas:** Data loading, cleaning, transformation, and summarization
-**NumPy:** Numerical operations
-**Matplotlib and Seaborn:** Data visualization
-**Scikit-learn:** Clustering and predictive modeling
-**Google Colab:** Execution environment with Google Drive integration
+**Python:** Core language for analysis  
+**Pandas:** Data loading, cleaning, transformation, and summarization  
+**NumPy:** Numerical operations  
+**Matplotlib and Seaborn:** Data visualization  
+**Scikit-learn:** Clustering and predictive modeling  
+**Google Colab:** Execution environment with Google Drive integration  
 
 # Exploratory Data Analysis (EDA)
 
