@@ -1,22 +1,40 @@
-# CO2-and-pollutant-emissions-from-vehicles-sold-in-France
-The objective of this analysis is to explore and better understand the dataset by applying data preprocessing techniques and conducting exploratory data analysis (EDA). Through this process, the project aims to uncover patterns, trends, and meaningful insights related to various characteristics of cars.
+# CO2 and pollutant emissions from vehicles sold in France
+This README provides an overview of the data analysis conducted on the Car Labelling dataset from ADEME France. The analysis focuses on understanding vehicle characteristics, cleaning and preprocessing the dataset, performing exploratory data analysis (EDA), identifying patterns through clustering, and building predictive models for CO2 emissions. The study highlights how fuel type, vehicle mass, engine power, gearbox, and body type relate to fuel consumption and environmental impact.
 
 # Dataset Description
 
-Since 2001, ADEME has acquired this data annually from the UTAC (Union Technique de l'Automobile du Motocycle et du Cycle), the organization responsible for vehicle type approval before sale, in agreement with the Ministry of Sustainable Development.
-For each vehicle, the original data (transmitted by UTAC) is as follows:
+The dataset was loaded from the file:
 
--fuel consumption  
--carbon dioxide (CO2) emissions  
--air pollutant emissions (regulated under the Euro standard)  
--all the technical characteristics of the vehicles (ranges, brands, models, CNIT number, energy type, etc.)  
+cl_JUIN_2013-complet3.csv
+
+It contains 44,850 vehicle records and includes information on a wide range of vehicle specifications and environmental indicators. After renaming the original French columns into English, the main variables used in the analysis included:
+
+* Brand: Manufacturer of the vehicle
+* Folder Model: Vehicle model grouping
+* Fuel: Fuel or energy type
+* Hybrid: Indicates whether the vehicle is hybrid
+* Administrative Power: Fiscal horsepower
+* Maximum Power (kW): Engine power in kilowatts
+* Gearbox: Transmission type
+* Urban / Extra Urban / Combined Consumption (l/100km): Fuel consumption measures
+* CO2 (g/km): Carbon dioxide emissions
+* CO type 1 (g/km), HC (g/km), NOX (g/km), HC+NOX (g/km), Particles (g/km): Pollutant emissions
+* Empty Mass Euro Min / Max (kg): Minimum and maximum empty mass
+* Body: Vehicle body type
+* Range: Vehicle segment
+
+A new feature, Empty Mass Euro Avg (kg), was created by averaging the minimum and maximum empty mass values.
 
 # Technology Stack
 
--Python: The primary programming language for data analysis.  
--Pandas: Used for data manipulation and preprocessing.  
--Matplotlib and Seaborn: Utilized for data visualization and plotting.  
--Scikit-Learn: Used for K-Means clustering analysis.  
+The analysis was conducted in Python using the following tools and libraries:
+
+**Python:** Core language for analysis
+**Pandas:** Data loading, cleaning, transformation, and summarization
+**NumPy:** Numerical operations
+**Matplotlib and Seaborn:** Data visualization
+**Scikit-learn:** Clustering and predictive modeling
+**Google Colab:** Execution environment with Google Drive integration
 
 # Exploratory Data Analysis (EDA)
 
