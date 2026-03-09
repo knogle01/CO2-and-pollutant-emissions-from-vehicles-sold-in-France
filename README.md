@@ -104,13 +104,11 @@ The dataset is dominated by diesel (GO) vehicles, followed by gasoline (ES). Oth
 
 <img width="1052" height="728" alt="Screenshot 2026-03-09 at 6 24 50 PM" src="https://github.com/user-attachments/assets/ddfbf583-03e9-41f3-adbd-a29e9497ed30" />
 
-**Distribution of brands and models**
+**4.2 Distribution of Brands and Models**
 
 The dataset covers 51 brands and hundreds of models. Some brands (e.g MERCEDES-BENZ) appear much more frequently than others, and certain manufacturers also offer a wider variety of models.
-**Distribution of Brands**
-<img width="1210" height="702" alt="Screenshot 2026-03-09 at 6 27 02 PM" src="https://github.com/user-attachments/assets/751ae26c-b0cb-4566-a5bf-e9de642942a9" />
-**Distribution of Models by Brand**
-<img width="1212" height="791" alt="Screenshot 2026-03-09 at 6 29 14 PM" src="https://github.com/user-attachments/assets/1fcb5c3d-3026-4c6c-a3a5-69cdca963ce0" />
+
+<img width="1603" height="792" alt="Screenshot 2026-03-09 at 6 50 52 PM" src="https://github.com/user-attachments/assets/342d743c-54ae-464b-812c-161dbb55306a" />
 
 **Summary statistics**
 
