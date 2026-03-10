@@ -146,7 +146,39 @@ The dataset is dominated by diesel (GO) vehicles, followed by gasoline (ES). Oth
 
 
 <img width="1387" height="570" alt="Screenshot 2026-03-10 at 5 03 49 PM" src="https://github.com/user-attachments/assets/3199f892-ede8-43ee-9ad4-3fc02993c078" />
+<p><sub>Fuel Categories are labeled as follows:</sub></p>
 
+<table>
+<tr>
+<td width="50%">
+
+<sub>
+<ul>
+<li><b>ES</b>: unleaded 95 gasoline vehicles</li>
+<li><b>GO</b>: diesel vehicles</li>
+<li><b>FE</b>: E85 vehicles</li>
+<li><b>EH</b>: gasoline (ES) / electric hybrid (non-rechargeable)</li>
+<li><b>EE</b>: gasoline (ES) / electric hybrid (rechargeable)</li>
+<li><b>GH</b>: diesel / electric hybrid (non-rechargeable)</li>
+</ul>
+</sub>
+
+</td>
+<td width="50%">
+
+<sub>
+<ul>
+<li><b>GL</b>: diesel / electric hybrid (rechargeable)</li>
+<li><b>EL</b>: electric vehicles</li>
+<li><b>ES / GP</b>: dual fuel gasoline (ES) / liquefied petroleum gas (GPL) (gasoline consumption data)</li>
+<li><b>GP / ES</b>: dual fuel gasoline (ES) / liquefied petroleum gas (GPL) (GPL consumption data)</li>
+<li><b>ES / GN</b>: natural gas (GNV) (gasoline consumption data)</li>
+</ul>
+</sub>
+
+</td>
+</tr>
+</table>
 
 ## 4.3 Distribution of Brands and Models**
 
@@ -155,21 +187,6 @@ The dataset covers 51 brands and hundreds of models. Some brands (e.g MERCEDES-B
 
 <img width="1638" height="784" alt="Screenshot 2026-03-10 at 2 24 47 PM" src="https://github.com/user-attachments/assets/1a86cf2c-b703-49db-a182-bc1b2246ba47" />
 
-Fuel Categories are labeled as follows:
-
-| Modality | Description |
-|-----|-------------|
-| ES | unleaded 95 Gasoline vehicles |
-| GO | diesel vehicles |
-| FE | E85 vehicles |
-| EH | gasoline (ES) / electric hybrid (non-rechargeable) |
-| EE | gasoline (ES) / electric hybrid (rechargeable) |
-| GH | diesel / electric hybrid (non-rechargeable) |
-| GL | diesel / electric hybrid (rechargeable) |
-| EL | electric vehicles |
-| ES / GP | dual fuel Gasoline (ES) / liquefied petroleum gas (GPL) – Gasoline consumption data |
-| GP / ES | dual fuel Gasoline (ES) / liquefied petroleum gas (GPL) – GPL consumption data |
-| ES / GN | dual fuel Gasoline (ES) / natural gas (GNV) – Gasoline consumption data |
 
 ## 4.4 CO2 distribution by brand, fuel, and vehicle range (segments)
 
