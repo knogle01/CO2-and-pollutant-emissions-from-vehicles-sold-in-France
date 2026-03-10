@@ -27,7 +27,21 @@ It contains 44,850 vehicle records and includes information on a wide range of v
 
 A new feature, Empty Mass Euro Avg (kg), was created by averaging the minimum and maximum empty mass values.
 
+**Fuel Categories are labled as followed:**  
 
+* **ES:** unleaded 95 Gasoline vehicles  
+* **GO:** diesel vehicles
+* **FE:** E85 vehicles
+* **EH:** gasoline (ES)/electric hybrid (non-rechargeable)
+* **EE:** gasoline (ES)/electric hybrid (rechargeable)
+* **GH:** diesel/electric hybrid (non-rechargeable)
+* **GL:** diesel/electric hybrid (rechargeable)
+* **EL:** electric vehicles
+* **ES / GP:** dual fuel Gasoline (ES)/liquefied petroleum gas (GPL) (Gasoline (ES)consumption data)
+* **GP / ES:** dual fuel Gasoline (ES)/liquefied petroleum gas (GPL) (GPL consumption data)
+* **ES/GN:** (GNV) (Gasoline (ES) consumption data)
+
+**Gearbox Types are labled as followed:**
 
 # 2. Technology Stack
 
@@ -96,7 +110,46 @@ This average mass was then used throughout the analysis.
 
 # 4. Exploratory Data Analysis (EDA)
 
-The exploratory analysis examined the structure and patterns of the dataset from several perspectives.
+The exploratory analysis examined the structure and patterns of the dataset from several perspectives.  
+
+A descriptive summary shows that the dataset contains **44,850 rows, 51 brands, 458 folder models**, and **13 fuel categories**. 
+
+**The average values reported include:**  
+
+* **Administrative Power:** about 11.02  
+* **Maximum Power:** about 124.78 kW  
+* **Combined Consumption:** about 7.71 l/100km  
+* **CO2 emissions:** about 198.74 g/km  
+* **Average empty mass:** about 2120.25 kg  
+
+**Fuel Categories are labled as followed:**
+* **ES:** unleaded 95 Gasoline vehicles  
+* **GO:** diesel vehicles
+* **FE:** E85 vehicles
+* **EH:** gasoline (ES)/electric hybrid (non-rechargeable)
+* **EE:** gasoline (ES)/electric hybrid (rechargeable)
+* **GH:** diesel/electric hybrid (non-rechargeable)
+* **GL:** diesel/electric hybrid (rechargeable)
+* **EL:** electric vehicles
+* **ES / GP:** dual fuel Gasoline (ES)/liquefied petroleum gas (GPL) (Gasoline (ES)consumption data)
+* **GP / ES:** dual fuel Gasoline (ES)/liquefied petroleum gas (GPL) (GPL consumption data)
+* **ES/GN:** (GNV) (Gasoline (ES) consumption data)
+
+
+|index|Brand|Folder Model|Utac Model|Commerical Designation|cnit|Type Variant Version|Fuel|Hybrid|Administrative Power|Maximum Power \(kW\)|Gearbox|Urban Consumption \(l/100km\)|Extra Urban Consumption \(l/100km\)|Combined Consumption \(l/100km\)|CO2 \(g/km\)|CO type 1 \(g/km\)|HC \(g/km\)|NOX \(g/km\)|HC+NOX \(g/km\)|Particles \(g/km\)|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|count|44850|44850|44850|44850|44850|44850|44850|44850|44850\.0|44850\.0|44850|44847\.0|44847\.0|44850\.0|44850\.0|44586\.0|44586\.0|44547\.0|44586\.0|41747\.0|
+|unique|51|458|419|3582|44191|28781|13|2|NaN|NaN|13|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|
+|top|MERCEDES-BENZ|VIANO|VIANO|VIANO 2\.2 CDI|M10LNCVP000R207|263AXG1B05|GO|non|NaN|NaN|M 6|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|
+|freq|38450|14031|14031|5874|16|32|37778|44593|NaN|NaN|19364|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|
+|mean|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|11\.018996655518395|124\.78083389074695|NaN|9\.698303119495174|6\.561922759604879|7\.709544035674469|198\.7379264214047|0\.1533268088637689|0\.022389081774548063|0\.31183959413652995|0\.33395590544116993|0\.000959843581574724|
+|std|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|5\.554474663340535|49\.15880390757593|NaN|2\.3823957247243936|1\.2112840762678807|1\.6125365011865005|39\.43598817742501|0\.13899707813825268|0\.014255190181952957|0\.4631107921136125|0\.4582791644245911|0\.006465942752424883|
+|min|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|1\.0|10\.0|NaN|0\.0|0\.0|0\.0|0\.0|0\.0|-0\.05399999999999999|0\.001|0\.0|0\.0|
+|25%|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|9\.0|100\.0|NaN|8\.8|6\.3|7\.2|187\.0|0\.046|0\.01100000000000001|0\.158|0\.18|0\.0|
+|50%|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|10\.0|120\.0|NaN|9\.7|6\.7|7\.7|203\.0|0\.093|0\.01899999999999999|0\.197|0\.216|0\.001|
+|75%|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|11\.0|125\.0|NaN|10\.7|7\.1|8\.4|221\.0|0\.222|0\.03|0\.228|0\.253|0\.001|
+|max|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|81\.0|559\.3|NaN|41\.1|14\.9|24\.5|572\.0|0\.968|0\.143|1\.846|1\.86|0\.61|
+
 
 **4.1 Distribution of fuel types**
 
