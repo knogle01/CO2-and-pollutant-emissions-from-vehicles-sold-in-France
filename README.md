@@ -218,10 +218,21 @@ While **Mercedes-Benz dominates the dataset in volume**, **Audi leads in model d
 
 <img width="1619" height="776" alt="Screenshot 2026-03-10 at 5 37 44 PM" src="https://github.com/user-attachments/assets/ff978cd2-113e-4cf3-8f56-a7e5735a0b37" />
 
+## 4.4 Distribution of Key Vehicle Characteristics
 
-## 4.4 Brand-related Analysis
+The histograms illustrate the distributions of several key vehicle characteristics:
 
-### CO₂ Emissions by Brand
+- Most vehicles have `CO2 (g/km)` values around **180–230 g/km**.
+- `Empty Mass Euro Avg (kg)` is typically between **1900–2200 kg**.
+- `Maximum Power (kW)` mostly ranges from **80–140 kW**.
+- `Combined Consumption (l/100km)` is concentrated around **6–9 l/100 km**.
+
+<img width="1609" height="794" alt="Screenshot 2026-03-10 at 7 40 56 PM" src="https://github.com/user-attachments/assets/7e5a81a2-e3b1-4ad6-842e-43a99074c0ff" />
+
+
+## 4.5 Brand-related CO₂ Emissions 
+
+### Distribution CO₂ Emissions by Brand
 
 There is **substantial variation in CO₂ emissions across brands**.
 
