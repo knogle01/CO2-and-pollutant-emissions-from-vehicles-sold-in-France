@@ -122,19 +122,6 @@ A descriptive summary shows that the dataset contains **44,850 rows, 51 brands, 
 * **CO2 emissions:** about 198.74 g/km  
 * **Average empty mass:** about 2120.25 kg  
 
-**Fuel Categories are labled as followed:**
-* **ES:** unleaded 95 Gasoline vehicles  
-* **GO:** diesel vehicles
-* **FE:** E85 vehicles
-* **EH:** gasoline (ES)/electric hybrid (non-rechargeable)
-* **EE:** gasoline (ES)/electric hybrid (rechargeable)
-* **GH:** diesel/electric hybrid (non-rechargeable)
-* **GL:** diesel/electric hybrid (rechargeable)
-* **EL:** electric vehicles
-* **ES / GP:** dual fuel Gasoline (ES)/liquefied petroleum gas (GPL) (Gasoline (ES)consumption data)
-* **GP / ES:** dual fuel Gasoline (ES)/liquefied petroleum gas (GPL) (GPL consumption data)
-* **ES/GN:** (GNV) (Gasoline (ES) consumption data)
-
 
 |index|Brand|Folder Model|Utac Model|Commerical Designation|cnit|Type Variant Version|Fuel|Hybrid|Administrative Power|Maximum Power \(kW\)|Gearbox|Urban Consumption \(l/100km\)|Extra Urban Consumption \(l/100km\)|Combined Consumption \(l/100km\)|CO2 \(g/km\)|CO type 1 \(g/km\)|HC \(g/km\)|NOX \(g/km\)|HC+NOX \(g/km\)|Particles \(g/km\)|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
