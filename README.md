@@ -218,6 +218,27 @@ While **Mercedes-Benz dominates the dataset in volume**, **Audi leads in model d
 
 <img width="1619" height="776" alt="Screenshot 2026-03-10 at 5 37 44 PM" src="https://github.com/user-attachments/assets/ff978cd2-113e-4cf3-8f56-a7e5735a0b37" />
 
+
+### Reducing Brand Imbalance through Deduplication
+
+To avoid bias from repeatedly occurring vehicle configurations, the dataset was reduced to **unique non-electric vehicle specifications**. Many vehicles appear multiple times in the original dataset because the same technical configuration can be listed across different entries. Keeping all of them would overrepresent certain brands or models.
+
+To address this, duplicates were removed based on the following variables that define a vehicle’s technical specification:
+
+- `Brand`
+- `Fuel`
+- `Body`
+- `Gearbox`
+- `Maximum Power (kW)`
+- `Empty Mass Euro Avg (kg)`
+- `CO2 (g/km)`
+
+Two observations are considered identical if all of these variables have the same values. In such cases, only one observation is retained.
+This deduplication step reduces **brand imbalance** and ensures that the subsequent analysis focuses on **distinct vehicle configurations** rather than repeated instances of the same specification.
+
+<img width="889" height="551" alt="Screenshot 2026-03-11 at 9 35 40 PM" src="https://github.com/user-attachments/assets/7f30d2d8-a6bc-4bac-be06-3a4c5fbb2f9f" />
+
+
 ## 4.4 Distribution of Key Vehicle Characteristics
 
 The histograms illustrate the distributions of several key vehicle characteristics:
@@ -259,15 +280,24 @@ Vehicle **power and weight are strongly associated with higher CO₂ emissions a
 
 <img width="1609" height="797" alt="Screenshot 2026-03-10 at 7 25 37 PM" src="https://github.com/user-attachments/assets/970c2f4f-0399-4f8b-be26-528c70de7153" />
 
+## 4.5 Power and Weight Effects on Emissions and Fuel Consumption
 
-# Exploratory Data Analysis (EDA)
+The plots examine how `Empty Mass Euro Avg (kg)` and `Maximum Power (kW)` relate to `CO2 (g/km)` and `Combined Consumption (l/100km)`.
 
--Examination of how different energy types are represented across vehicles.  
--Analysis of the distribution of vehicle manufacturers in the dataset.  
--Investigation of engine power–related variables.  
--Evaluation of CO₂ emission levels and their patterns.  
--Exploration of the relationships between vehicle weight, engine power, fuel consumption, and emissions.  
--Application of clustering methods to detect potential groupings based on vehicle weight and fuel consumption.   
+#### Key Insights
+- Both `Empty Mass Euro Avg (kg)` and `Maximum Power (kW)` show a **positive relationship** with `CO2 (g/km)` and `Combined Consumption (l/100km)`.
+- **Heavier and more powerful vehicles** generally produce **higher emissions and consume more fuel**.
+- The relationships appear **nonlinear**, with stronger increases at higher weight and power levels.
+- Clustering reveals groups of **lighter, efficient vehicles** and **heavier or more powerful vehicles with higher emissions**.
+- A smaller outlier cluster (Cluster 3) likely represents **luxary or sports cars**, characterized by **very high engine power, fuel consumption, and CO₂ emissions**.
+
+<img width="1609" height="784" alt="Screenshot 2026-03-11 at 4 28 45 PM" src="https://github.com/user-attachments/assets/0035e37c-1be4-472e-b753-44bc4b4b5fb2" />
+
+<img width="1609" height="784" alt="Screenshot 2026-03-11 at 4 46 05 PM" src="https://github.com/user-attachments/assets/7f79269c-c85d-49df-beb7-b3eddf24ec35" />
+
+  
+<img width="1609" height="731" alt="Screenshot 2026-03-11 at 6 01 04 PM" src="https://github.com/user-attachments/assets/a08e3694-f5ff-4be4-9e11-4a27fc8033a9" />
+<img width="1609" height="778" alt="Screenshot 2026-03-11 at 6 22 39 PM" src="https://github.com/user-attachments/assets/a898fc1f-324a-4316-81d1-79c0e2c250ff" />
 
 # Key Findings
 Some key findings from the analysis include:  
